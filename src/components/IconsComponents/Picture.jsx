@@ -7,17 +7,21 @@ export const Picture = (props) => {
         {
             props.setPicturePopup(true);
             props.setPictureUrl(props.path);
+
+            setTimeout(function () {
+                props.setImageWindowAnimated(true)
+              }, 500)
         }
       };
 
   return (
     <div className={props.selected == true ? "bg-Sapphire/[.3] border rounded-sm border-Blue/[.3] cursor-pointer" : "border border-Blue/[.0] h-12 cursor-pointer"}>
-        <ul className="w-12 m-1" onClick={handleClick}>
+        <ul className="w-15 m-1" onClick={handleClick}>
             <li>
-                <img src={image_logo} className="object-contain h-12 w-12 px-1 select-none pointer-events-none"></img>
+                <img src={image_logo} className="object-contain h-15 w-15 px-1 "></img>
             </li>
             <li className='flex items-center justify-center'>
-                <a className='text-center font-hack select-none text-Text'>{props.name}</a>
+                <a className='text-center font-hack text-Text break-all text-sm'>{props.name}</a>
             </li>
         </ul>
    </div>

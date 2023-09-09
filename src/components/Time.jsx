@@ -13,6 +13,6 @@ export const Time = () => {
     }, []);
 
     return (
-    <a className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-Text select-none">{time}</a>
+    <a className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-Text ">{time}</a>
   )
 }
