@@ -53,7 +53,7 @@ export const solarReader = [
     },
     {
         type: type.Folder,
-        name: "Windows App",
+        name: "Apps",
         dummy: false,
         data: [
             {
@@ -71,10 +71,33 @@ export const solarReader = [
                 name: "obj",
                 dummy: true,
             },
+            {
+        type: type.Folder,
+        name: "Windows Pics",
+        dummy: false,
+        data: [
             { type: type.Picture,
                 name: "main.png",
-                path: 'solarReader/main.jgp'
+                path: 'solarreader/main.jpg'
             },
+        ]
+    },
+     {
+        type: type.Folder,
+        name: "Android Pics",
+        dummy: false,
+        data: [
+                { type: type.Picture,
+                    name: "stats.png",
+                    path: 'solarreader/android_stats.jpg'
+                },
+                { type: type.Picture,
+                    name: "graph.png",
+                    path: 'solarreader/graph.jpg'
+                },
+                ]
+            },
+          
             {
                 type: type.Default,
                 name: "SolarReader.sln",
@@ -87,6 +110,7 @@ export const solarReader = [
                 "",
                 "## Description",
                 "Graph reader using the REST API for this purpose.",
+                "Multiplatform , currently working for Windows and Android.",
                 "",
                 "### Technologies",
                 " - MAUI",
