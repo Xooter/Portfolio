@@ -8,6 +8,7 @@ import terminal_logo from "./../assets/terminal.png";
 import sound_logo from "./../assets/sound.svg";
 import monitor_logo from "./../assets/monitor.svg";
 import visual_logo from "./../assets/vs.svg";
+import { Time } from "./Time.jsx";
 
 export const TaskBar = () => {
   return (
